@@ -1,4 +1,4 @@
-package io.github.nnkwrik.concurrentColletion.concurrentMap;
+package io.github.nnkwrik.concurrentColletions.concurrentMap;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ForkJoinPool;

@@ -1,9 +1,8 @@
-package io.github.nnkwrik.concurrentColletion.blockingQueue.delayQueue;
+package io.github.nnkwrik.concurrentColletions.blockingQueue.delayQueue;
 
-import io.github.nnkwrik.concurrentColletion.blockingQueue.Data;
+import io.github.nnkwrik.concurrentColletions.blockingQueue.Data;
 
 import java.util.concurrent.DelayQueue;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @author nnkwrik

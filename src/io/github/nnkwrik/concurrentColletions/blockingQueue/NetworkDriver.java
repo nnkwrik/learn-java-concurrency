@@ -1,9 +1,5 @@
-package io.github.nnkwrik.concurrentColletion.blockingQueue;
+package io.github.nnkwrik.concurrentColletions.blockingQueue;
 
-import io.github.nnkwrik.concurrentColletion.blockingQueue.delayQueue.DNetworkDriver;
-import io.github.nnkwrik.concurrentColletion.blockingQueue.transferQueue.TNetworkDriver;
-
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.concurrent.*;
 

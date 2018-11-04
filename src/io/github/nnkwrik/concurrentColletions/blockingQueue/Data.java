@@ -1,29 +1,25 @@
-package io.github.nnkwrik.concurrentColletion.blockingQueue.transferQueue;
+package io.github.nnkwrik.concurrentColletions.blockingQueue;
 
-import io.github.nnkwrik.concurrentColletion.blockingQueue.Data;
-
-import java.util.concurrent.TransferQueue;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * @author nnkwrik
  * @date 18/10/31 20:51
  */
-public class TData extends Data {
+public class Data {
 
-    private TransferQueue<String> transferQueue;
+    private BlockingQueue<String> queue;
 
-    public TData(TransferQueue transferQueue) {
-        super(null);
-        this.transferQueue = transferQueue;
+    public Data(BlockingQueue queue) {
+        this.queue = queue;
     }
 
-    @Override
     public String receive() {
 
         try {
-            String packet = transferQueue.take();
+            String packet = queue.take();
             System.out.println(Thread.currentThread().getName() + " receive: " + packet);
-            return packet;
+            return packet+ " <======= FROM " + Thread.currentThread().getName();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             e.printStackTrace();
@@ -31,17 +27,15 @@ public class TData extends Data {
         return null;
 
     }
-    @Override
+
     public void send(String packet) {
 
         try {
             System.out.println(Thread.currentThread().getName() + " send: " + packet);
-//            transferQueue.put(packet);
-            transferQueue.transfer(packet + " FROM " + Thread.currentThread().getName());
+            queue.put(packet);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             e.printStackTrace();
         }
-
     }
 }

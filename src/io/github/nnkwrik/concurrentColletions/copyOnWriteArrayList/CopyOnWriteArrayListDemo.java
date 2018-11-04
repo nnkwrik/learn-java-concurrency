@@ -1,4 +1,4 @@
-package io.github.nnkwrik.concurrentColletion.copyOnWriteArrayList;
+package io.github.nnkwrik.concurrentColletions.copyOnWriteArrayList;
 
 import java.util.Arrays;
 import java.util.Iterator;

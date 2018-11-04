@@ -1,4 +1,4 @@
-package io.github.nnkwrik.concurrentColletion.blockingQueue.delayQueue;
+package io.github.nnkwrik.concurrentColletions.blockingQueue.delayQueue;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;

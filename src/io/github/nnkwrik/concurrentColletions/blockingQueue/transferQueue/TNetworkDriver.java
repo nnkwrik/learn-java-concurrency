@@ -1,7 +1,7 @@
-package io.github.nnkwrik.concurrentColletion.blockingQueue.transferQueue;
+package io.github.nnkwrik.concurrentColletions.blockingQueue.transferQueue;
 
-import io.github.nnkwrik.concurrentColletion.blockingQueue.Receiver;
-import io.github.nnkwrik.concurrentColletion.blockingQueue.Sender;
+import io.github.nnkwrik.concurrentColletions.blockingQueue.Receiver;
+import io.github.nnkwrik.concurrentColletions.blockingQueue.Sender;
 
 import java.util.concurrent.*;
 

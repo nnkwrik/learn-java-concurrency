@@ -1,12 +1,9 @@
-package io.github.nnkwrik.concurrentColletion.blockingQueue.delayQueue;
+package io.github.nnkwrik.concurrentColletions.blockingQueue.delayQueue;
 
-import io.github.nnkwrik.concurrentColletion.blockingQueue.Receiver;
-import io.github.nnkwrik.concurrentColletion.blockingQueue.Sender;
-import io.github.nnkwrik.concurrentColletion.blockingQueue.transferQueue.TData;
+import io.github.nnkwrik.concurrentColletions.blockingQueue.Receiver;
+import io.github.nnkwrik.concurrentColletions.blockingQueue.Sender;
 
 import java.util.concurrent.DelayQueue;
-import java.util.concurrent.LinkedTransferQueue;
-import java.util.concurrent.TransferQueue;
 
 /**
  * @author nnkwrik

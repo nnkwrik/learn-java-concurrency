@@ -1,6 +1,4 @@
-package io.github.nnkwrik.concurrentColletion.blockingQueue;
-
-import java.util.concurrent.ThreadLocalRandom;
+package io.github.nnkwrik.concurrentColletions.blockingQueue;
 
 /**
  * @author nnkwrik
